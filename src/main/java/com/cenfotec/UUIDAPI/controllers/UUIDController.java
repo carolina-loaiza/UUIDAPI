@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UUIDController {
+	
 	@GetMapping("/create")
 	public ResponseEntity<UUID> getUUID(){
 		return ResponseEntity.ok(UUID.randomUUID());
